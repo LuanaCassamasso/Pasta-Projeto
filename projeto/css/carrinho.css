@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+.cabecalho{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(241, 113, 113);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.barradepesquisa{
+    width: 450px;
+    height: 30px;
+}
+.icons{
+    width: 200px;
+    height: 200px;
+}
+.icons2{
+    width: 120px;
+    height: 120px;
+}
+
+.rodape{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 113, 113);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4px;
+}
+.carro{
+    height: 400px;
+    width: 400px;
+}
+.carrinho{
+    margin-top: 160px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    background-color: antiquewhite;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    border: solid 6px rgb(241, 113, 113);
+    border-radius: 50px;
+    height: 350px;
+    width: 550px;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium';
+    background-color: antiquewhite;
+}
+.container{
+    font-size: 70px;
+    font-family: Georgia;
+    margin-top: 10px;
+    background-color: rgb(241, 113, 113);
+}

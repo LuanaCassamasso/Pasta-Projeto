@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+.cabecalho{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(241, 113, 113);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.barradepesquisa{
+    width: 450px;
+    height: 30px;
+}
+.icons{
+    width: 210px;
+    height: 210px;
+}
+.icons2{
+    width: 120px;
+    height: 120px;
+}
+.container{
+display: flex;
+flex-direction: column;
+height: 540px;
+width: 100%;
+background-color: rgb(255, 255, 255);
+gap: 30px;
+margin-top: 30px;
+}
+.primeiralinha{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.segundalinha{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.bolinha{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(241, 113, 113);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bolinha:hover{
+    scale:1.2;
+    border: 6px rgb(0, 0, 0) solid;
+}
+.imagembolinha{
+    width: 200px;
+    height: 200px;
+}
+.rodape{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 113, 113);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}

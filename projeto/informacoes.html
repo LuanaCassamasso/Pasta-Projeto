@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/informacoes.css">
+    <title>BUY TICKENTS</title>
+</head>
+<body>
+    <div class="cabecalho">
+    <a href="http://127.0.0.1:5500/Aula%20DEV/Aula%20DEV/projeto/index.html"><img class="icons"src=img/logo_projeto-removebg-preview.png> </a>
+    <input type="text" class="barradepesquisa"> 
+    <a href="http://127.0.0.1:5500/Aula%20DEV/Aula%20DEV/projeto/carrinho.html"><img class="icons2" src="img/carrinho_png2.png"></a>
+    <a href="http://127.0.0.1:5500/Aula%20DEV/Aula%20DEV/projeto/informacoes.html"><img class="icons2" src="img/informacoes_png2.png"></a>
+    </div>
+
+<div class="container">
+    <p><b>INFORMAÇÕES SOBRE O SITE:</b></p>
+</div>
+ 
+<div class="perguntas">
+<details>
+    <summary>Quem somos? </summary>
+    <p>Somos um site chamado BUY TICKENTS,onde os clientes podem comprar ingressos com segurança e qualidade</p>
+</details>
+<details>
+    <summary>Quais são as formas de pagamento?</summary>
+    <p>As formas de pagamento sao atraves de cartao,dinheiro (boleto), e pix, dividimos em até 3 vezes,sem juros </p>
+</details>
+<details>
+    <summary>Quais os tipos de ingressos?</summary>
+    <p>Funk,Samba,Trap,Sertanejo,Forro,Rock,Teatro,Cinema</p>
+</details>
+<details>
+    <summary>Se eu nao puder ir ao show,tem reembolso?</summary>
+    <p>Com o aviso de antecedencia de 1 dia,tera o reembolso </p>
+</details>
+<details>
+    <summary>Como entrar em contato com nos?</summary>
+    <p>Telefone de contato 19 982588352</p>
+</details>
+<details>
+    <summary> Quem são os donos do site? </summary>
+    <p>Luana Cassamasso</p>
+</details>
+<details>
+    <summary>Qual é a faixa de preço?</summary>
+    <p>Temos ingressos de 30 á 500 reais</p>
+</details>
+<details>
+    <summary>Existe loja fisica da BUY TICKENTS?</summary>
+    <p>Sim, fica localizado na Avenida Imigrantes 569 em SÃO PAULO</p>
+</details>
+<p><b>Se tiver mais perguntas acesse o link www.ajuda.buytickents.br </b></p>
+<p><b>...</p></b>
+<video id="videoElement" width="400" height="300" autoplay></video>
+<div class="camera">
+    <button onclick="starCamera()">Abre camera</button>
+    <button onclick="stopCamera()">fecha camera</button>
+</div>
+</div>
+    <script>
+        let videoStream;
+    async function starCamera(){
+        const videoElement = document.getElementById('videoElement');
+        try{
+            videoStream = await navigator.mediaDevices.getUserMedia({video : true});
+            videoElement.srcObject = videoStream;
+        }catch(error){
+            console.error('Erro ao abrir a camera', erro);
+            alert('Erro ao abrir a camera');
+        }
+     }
+     async function stopCamera(){
+        const videoElement = document.getElementById('videoElement');
+        if(videoStream){
+            const tracks = videoStream.getTracks();
+            tracks.forEach(tracks => tracks.stop())
+            videoElement.srcObject = null;
+            
+        }
+     }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="login">
+<p><b>LOGIN: </b></p>
+<p>nome:</p>
+<input type="text" class="barradepesquisa"> 
+<p>email:</p>
+<input type="text" class="barradepesquisa"> 
+<p>senha:</p>
+<input type="text" class="barradepesquisa"> 
+<p>idade:</p>
+<input type="text" class="barradepesquisa"> 
+<p>Telefone:</p>
+<input type="text" class="barradepesquisa"> 
+<a href="http://127.0.0.1:5500/Aula%20DEV/Aula%20DEV/projeto/index.html"><p><b>ENVIAR!!</b></p></a>
+</div>
+
+    <div class="rodape">
+        <p><b>Luana cassamasso</b></p>         
+       <p><b>contato:19 982588352 </b></p>                             
+       <p><b> BUY TICKENTS</b></p>
+    </div>
